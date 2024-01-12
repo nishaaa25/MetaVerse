@@ -26,6 +26,7 @@ module.exports = {
         "light-grey": "#c7c7c7",
         "grey-700":"#b0b0b0",
         "blue-400":"#323f5d",
+        "blue-600":"#5d6680",
         "blue-800":"#25618b"
       },
       borderRadius:{

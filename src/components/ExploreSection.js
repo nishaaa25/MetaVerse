@@ -35,7 +35,7 @@ const ExploreSection = () => {
     setActive(index);
   };
   return (
-    <div className="container">
+    <div className="container flex-col">
       <p className="taglineText">| The World</p>
       <h1 className="headingText w-8/12">
         Choose the world you want to explore

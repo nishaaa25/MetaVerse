@@ -53,7 +53,7 @@ body {
     @apply px-6;
   }
   .container{
-    @apply w-full paddingY h-full text-center relative flex-center flex-col
+    @apply w-full paddingY h-full text-center relative flex-center
   }
 }
 
@@ -114,9 +114,9 @@ body {
   position: absolute;
   width: 304px;
   height: 100vh;
-  left: 30%;
+  left: 20%;
   top: 10%;
-
+  z-index: 0;
   background: rgba(45, 72, 152, 0.75);
   filter: blur(200px);
   transform: rotate(-53.13deg);
