@@ -1,7 +1,7 @@
 {
   "name": "metaverse",
   "version": "0.1.0",
-  "homepage": "https://nishaaa25.github.io/MetaVerse.git",
+  "homepage": "https://nishaaa25.github.io/MetaVerse/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
