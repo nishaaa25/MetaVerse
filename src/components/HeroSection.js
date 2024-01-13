@@ -2,43 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import cover from "../assets/cover.png";
 import stamp from "../assets/stamp.png";
+import { containerVariants,textVariants,imgVariants } from "../Motion";
 
-const containerVariants = {
-  hidden: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-    transition: {
-      duration: 0.7,
-    },
-  },
-};
-const imgVariants = {
-  hidden: {
-    x: "100vw",
-  },
-  visible: {
-    x: 0,
-    transition: {
-      delay: 0.2,
-      duration: 1.2,
-    },
-  },
-};
-const textVariants = {
-  hidden: { y: "40px",
-opacity:0},
-  visible: {
-    y: 0,
-    opacity:1,
-    transition: {
-      delay: 1.5,
-      duration: 0.7,
-      type: "spring",
-    },
-  },
-};
 const HeroSection = () => {
   return (
     <motion.div

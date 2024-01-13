@@ -2,12 +2,15 @@ import React from "react";
 import whatsnew from "../assets/whats-new.png";
 import headset from "../assets/headset.svg";
 import varpano from "../assets/vrpano.svg";
+import {motion} from "framer-motion";
+import { sideTextVariants2, whatsnewPlanetImgVariants } from "../Motion";
+import Tagline from "./Tagline";
 
 const WhatsNewSection = () => {
   return (
-    <div className="container text-start">
-      <div className="w-7/12 py-9 h-full relative z-40">
-        <p className="taglineText">|Whats New</p>
+    <motion.div className="container text-start" initial="hidden" whileInView="visible">
+      <motion.div variants={sideTextVariants2} className="w-7/12 py-9 h-full relative z-40">
+        <Tagline text="| What'S New"/>
         <h1 className="headingText pb-8">What's new about Metaversus?</h1>
         <div className="flex-between">
           <div className="flex flex-col justify-start items-start">
@@ -38,15 +41,15 @@ const WhatsNewSection = () => {
             </p>
           </div>
         </div>
-      </div>
-      <div className="w-5/12">
+      </motion.div>
+      <motion.div className="w-5/12" variants={whatsnewPlanetImgVariants}>
         <img
           src={whatsnew}
           alt="getstartedimg"
           className="w-[100%] relative z-50"
         />
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

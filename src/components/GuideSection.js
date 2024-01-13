@@ -1,19 +1,22 @@
 import React from "react";
 import getstarted from "../assets/get-started.png";
+import Tagline from "./Tagline";
+import {motion} from "framer-motion";
+import { guidePlanetImgVariants, sideTextVariants } from "../Motion";
 
 const GuideSection = () => {
   return (
-    <div className="container ml-12 text-start">
+    <motion.div className="container ml-12 text-start" initial="hidden" whileInView="visible" >
       <div className="gradient-04"></div>
-      <div>
+      <motion.div variants={guidePlanetImgVariants}>
         <img
           src={getstarted}
           alt="getstartedimg"
           className="w-[86%] relative z-50"
         />
-      </div>
-      <div className="w-full h-full relative z-40">
-        <p className="taglineText">|How Metaverse Works</p>
+      </motion.div>
+      <motion.div className="w-full h-full relative z-40" variants={sideTextVariants}>
+        <Tagline text="| How Metaverse Works"/>
         <h1 className="headingText pb-8">Get started with just a few clicks</h1>
         <div className="flex flex-col gap-6">
           <div className="flex justify-start items-center gap-7">
@@ -41,8 +44,8 @@ const GuideSection = () => {
             </p>
           </div>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

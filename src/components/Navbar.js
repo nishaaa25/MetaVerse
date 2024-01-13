@@ -4,34 +4,34 @@ import menu from "../assets/menu.svg";
 import { motion } from "framer-motion";
 
 const navVariants = {
-  hidden: { opacity: 0, y: "-10vw" },
+  hidden: { y: "-20px", opacity: 0 },
   visible: {
-    opacity: 1,
     y: 0,
+    opacity: 1,
     transition: {
       delay: 1.5,
-      duration: 1,
+      duration: 0.7,
       type: "spring",
     },
   },
 };
 const Navbar = () => {
   return (
-    <div className="w-full relative pt-6 pb-8">
+    <motion.div
+      className="w-full relative pt-6 pb-8"
+      variants={navVariants}
+      initial="hidden"
+      whileInView="visible"
+    >
       <div className="w-full h-full absolute top-0 left-[-50%] gradient-01 z-0"></div>
-      <motion.div
-        className="flex-between relative z-50"
-        variants={navVariants}
-        initial="hidden"
-        animate="visible"
-      >
+      <div className="flex-between relative z-50">
         <img src={search} alt="searchicon" width={24} />
         <div>
           <p className="text-xl font-bold">METAVERSUS</p>
         </div>
         <img src={menu} alt="menuicon" width={24} />
-      </motion.div>
-    </div>
+      </div>
+    </motion.div>
   );
 };
 
