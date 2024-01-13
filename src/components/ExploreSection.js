@@ -45,10 +45,10 @@ const ExploreSection = () => {
       whileInView="visible"
     >
       <Tagline text="| The World" />
-      <motion.h1 className="headingText w-8/12" variants={headingTextVariants}>
+      <motion.h1 className="headingText lg:w-8/12" variants={headingTextVariants}>
         Choose the world you want to explore
       </motion.h1>
-      <div className="flex-between w-full my-[50px]">
+      <div className="flex-between flex-col lg:flex-row w-full gap-4 my-[50px]">
         {images.map((img, index) => {
           return (
             <motion.div
@@ -73,7 +73,7 @@ const ExploreSection = () => {
                   <p className="text-2xl font-bold">{img.name}</p>
                 </div>
               ) : (
-                <p className="text-[26px] text-start font-bold absolute bottom-20 left-0 z-50 transform -rotate-90">
+                <p className="text-sm lg:text-[26px] text-start font-bold absolute top-2 lg:bottom-20 left-10 z-50 transform lg:-rotate-90">
                   {img.name}
                 </p>
               )}

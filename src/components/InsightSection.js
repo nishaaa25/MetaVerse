@@ -13,7 +13,7 @@ const InsightSection = () => {
       <div className="gradient-04"></div>
       <Tagline text="| Insight"/>
       <motion.h1 className="headingText mb-12" variants={headingTextVariants}>Insight about metaverse</motion.h1>
-      <div className="flex flex-col gap-8">
+      <div className="w-full flex flex-col gap-16 relative">
         <PlanetInfo
           imgUrl={planet7}
           para="Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Diam maecenas sed enim ut sem viverra alique."

@@ -6,13 +6,13 @@ import { guidePlanetImgVariants, sideTextVariants } from "../Motion";
 
 const GuideSection = () => {
   return (
-    <motion.div className="container ml-12 text-start" initial="hidden" whileInView="visible" >
+    <motion.div className="container xl:ml-12 text-start" initial="hidden" whileInView="visible" >
       <div className="gradient-04"></div>
       <motion.div variants={guidePlanetImgVariants}>
         <img
           src={getstarted}
           alt="getstartedimg"
-          className="w-[86%] relative z-50"
+          className="w-[86%] relative z-50 m-auto"
         />
       </motion.div>
       <motion.div className="w-full h-full relative z-40" variants={sideTextVariants}>
@@ -23,7 +23,7 @@ const GuideSection = () => {
             <div className="bg-blue-400 py-5 px-[22px] text-lg font-bold rounded-[20px] ">
               01
             </div>
-            <p className="text-grey-700 text-md w-1/2 leading-[32.4px]">
+            <p className="text-grey-700 text-md w-4/6 md:w-1/2 leading-[32.4px]">
               Find a world that suits you and you want to enter
             </p>
           </div>
@@ -31,7 +31,7 @@ const GuideSection = () => {
             <div className="bg-blue-400 py-5 px-[22px] text-lg font-bold rounded-[20px]">
               02
             </div>
-            <p className="text-grey-700 text-md w-1/2 leading-[32.4px]">
+            <p className="text-grey-700 text-md  w-4/6 md:w-1/2 leading-[32.4px]">
               Enter the world by reading god to be safe
             </p>
           </div>
@@ -39,7 +39,7 @@ const GuideSection = () => {
             <div className="bg-blue-400 py-5 px-[22px] text-lg font-bold rounded-[20px]">
               03
             </div>
-            <p className="text-grey-700 text-md w-1/2 leading-[32.4px]">
+            <p className="text-grey-700 text-md  w-4/6 md:w-1/2 leading-[32.4px]">
               No need to beat around the bush, just stay on the gas and have fun
             </p>
           </div>

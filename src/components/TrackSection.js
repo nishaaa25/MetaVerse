@@ -18,8 +18,8 @@ const TrackSection = () => {
         Track friends around you and invite them to play together in the same
         world
       </motion.h1>
-      <motion.div className="relative" variants={mapVariants}>
-        <img src={map} alt="mapimg" />
+      <motion.div className="relative w-full h-[58vh]" variants={mapVariants}>
+        <img src={map} alt="mapimg" className="w-full h-full object-cover"/>
         <div className="p-2 bg-blue-600 absolute right-[7%] top-[70%] rounded-full">
           <img src={people1} alt="people1" width={60} />
         </div>

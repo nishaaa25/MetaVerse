@@ -11,8 +11,8 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App bg-primary-black w-[100%] min-h-screen relative text-white overflow-hidden">
-      <div className="w-[1280px] mx-auto relative">
+    <div className="App bg-primary-black w-[100%] relative text-white overflow-hidden">
+      <div className="w-full px-[5%] md:px-[8%] lg:px-[4%] xl:px-0 xl:w-[1280px] mx-auto relative">
         <Navbar />
         <HeroSection />
         <AboutSection />

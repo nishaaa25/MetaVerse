@@ -19,41 +19,41 @@ body {
   align-items: center;
 }
 .dText {
-  width: 220px;
-  margin: 0px 10px;
-  height: 110px;
-  border-width: 20px;
+  width: 62px;
+  margin: 0px 5px;
+  height: 32px;
   border-radius: 50px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-color: white;
 }
+
 @layer utilities{
   .headingText{
-    @apply text-4xl text-white font-bold
+    @apply text-[40px] md:text-4xl text-white font-bold
   }
   .taglineText{
     @apply text-sm text-light-grey pb-[10px]
   }
   .planetcover{
-    @apply w-[170px] h-[700px] relative rounded-2xl overflow-hidden transition-all duration-500 cursor-pointer
+    @apply w-full h-[40px] lg:w-[170px] lg:h-[700px] relative rounded-2xl overflow-hidden transition-all duration-500 cursor-pointer
   }
   .planetimg{
     @apply w-full h-full object-cover relative z-10
   }
   .planetcover.active{
-    @apply w-[520px]
+    @apply h-[300px] lg:w-[520px] lg:h-[700px]
   }
 }
 @layer components {
   .paddingY {
-    @apply py-[64px];
+    @apply py-[44px] lg:py-[64px] ;
   }
   .paddingX {
     @apply px-6;
   }
   .container{
-    @apply w-full paddingY h-full text-center relative flex-center
+    @apply w-full paddingY h-full text-center relative flex-center flex-col lg:flex-row mx-auto
   }
 }
 

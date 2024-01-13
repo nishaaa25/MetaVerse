@@ -11,7 +11,7 @@ export const imgVariants = {
     x: "100vw",
   },
   visible: {
-    x: 0,
+    x: 10,
     transition: {
       delay: 0.2,
       duration: 1.2,
@@ -90,7 +90,7 @@ export const planetVariants = {
 };
 export const sideTextVariants = {
   hidden: {
-    x: "10vw",
+    x: "10%",
     opacity: 0,
   },
   visible: {
@@ -104,7 +104,7 @@ export const sideTextVariants = {
 };
 export const sideTextVariants2 = {
   hidden: {
-    x: "-10vw",
+    x: "-10%",
     opacity: 0,
   },
   visible: {
@@ -119,7 +119,7 @@ export const sideTextVariants2 = {
 export const guidePlanetImgVariants = {
   hidden: {
     rotate: "140deg",
-    x: "-34vw",
+    x: "-600px",
   },
   visible: {
     rotate: 0,
@@ -133,7 +133,7 @@ export const guidePlanetImgVariants = {
 export const whatsnewPlanetImgVariants = {
   hidden: {
     rotate: "140deg",
-    x: "34vw",
+    x: "600px",
   },
   visible: {
     rotate: 0,

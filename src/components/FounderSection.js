@@ -10,22 +10,22 @@ import {
 
 const FounderSection = () => {
   return (
-    <motion.div className="container" initial="hidden" whileInView="visible">
+    <motion.div className="container gap-6" initial="hidden" whileInView="visible">
       <motion.div
-        className="relative w-[370px] h-[610px] border border-white border-opacity-40 rounded-3xl text-start p-8 flex flex-col justify-end "
+        className="relative lg:w-[370px] lg:h-[610px] border border-white border-opacity-40 rounded-3xl text-start p-4 lg:p-8 flex flex-col justify-end "
         variants={founderTextVariants}
       >
         <div className="feedback-gradient" />
         <h2 className="text-2xl font-bold">Samantha</h2>
-        <p className="text-md mb-6">Founder MetaVerse</p>
-        <p className="text-xl leading-[44px]">
+        <p className="lg:text-md mb-6">Founder MetaVerse</p>
+        <p className="text-md lg:text-xl leading-[40px] lg:leading-[44px]">
           "With the development of today's technology, metaverse is very useful
           for today's work, or can be called web 3.0. by using metaverse you can
           use it as anything"
         </p>
       </motion.div>
       <motion.div
-        className="relative w-[886px] h-[610px] rounded-3xl overflow-hidden"
+        className="relative lg:w-[664px] xl:w-[886px] lg:h-[610px] rounded-3xl overflow-hidden"
         variants={founderIMgVariants}
       >
         <img
@@ -37,7 +37,7 @@ const FounderSection = () => {
       <motion.img
         src={stamp}
         alt="stampimg"
-        className="absolute w-[160px] left-[24%] top-[12%]"
+        className="hidden lg:block absolute w-[160px] left-[24%] top-[12%]"
         variants={stampVariants}
       />
     </motion.div>
